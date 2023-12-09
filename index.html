@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Meme Page</title>
+</head>
+<body>
+    <header>
+        <h1>Meme Central</h1>
+    </header>
+
+    <section id="memes-container">
+        <div class="meme">
+            <img src="meme1.jpg" alt="Meme 1">
+            <p>When you go to a privite school</p>
+        </div>
+
+
+        <!-- Add more memes here as needed -->
+
+    </section>
+
+    <section id="upload-section">
+        <h2>Upload Your Meme</h2>
+        <button id="upload-button">Upload Meme</button>
+        <form id="upload-form" enctype="multipart/form-data">
+            <input type="file" id="meme-image" name="meme-image" accept="image/*" style="display: none;" required>
+            
+            <label for="meme-caption">Caption:</label>
+            <input type="text" id="meme-caption" name="meme-caption" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

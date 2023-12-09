@@ -1,0 +1,103 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+}
+
+header {
+    background-color: #4267b2;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+#memes-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+    padding: 20px;
+}
+
+.meme {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: white;
+    scroll-snap-align: start;
+    min-width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.meme:hover {
+    transform: scale(1.05);
+}
+
+
+/* Set maximum width of images to 100% */
+.meme img {
+    max-width: 20%;
+    height: 50%;
+}
+
+
+
+.meme p {
+    margin-top: 10px;
+    text-align: center;
+    color: #333;
+}
+
+#upload-section {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4267b2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #365899;
+}
+/* styles.css */
+
+/* Set maximum width of meme containers to 100% */
+.meme {
+    max-width: 100%;
+    margin: 0 auto; /* Center the meme container */
+}
+
+/* Set maximum width of images to 100% */
+.meme img {
+    max-width: 20%;
+    height: 70%;
+}
